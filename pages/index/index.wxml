@@ -1,0 +1,21 @@
+<scroll-view id="index-wrapper" scroll-y bindscroll="onScrollView">
+  <custom-nav 
+    scroll-source="#index-wrapper"
+    title="设置设置设置设置设置设置设置设置设置设置设置设置设置设置设置"
+    use-scroll-view
+    id="custom-nav"
+  />
+
+  <view>发射点发射点</view>
+  <view style="height: 1000px;"></view>
+</scroll-view>
+
+<!-- <view id="index-wrapper">
+  <custom-nav 
+    scroll-source="#index-wrapper"
+    title="设置设设置设设置设设置设设置设设置设设置设设置设设置设"
+  />
+
+  <view>发射点发射点</view>
+  <view style="height: 1000px;"></view>
+</view> -->

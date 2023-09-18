@@ -1,0 +1,38 @@
+<view 
+  class="custom-nav" 
+  style="height: {{navHeight}}px; background-color: {{navBackgroundColor}};"
+>
+  <view 
+    class="custom-nav-content" 
+    style="height: {{menuBtnRect.height}}px; margin-top: {{menuBtnRect.top}}px;"
+  >
+    <!-- 
+      左侧有两个目的：
+      1：left slot。 
+      2：最小宽度样式复制menuBtn，以兼容title文字过长的省略打点演示。
+    -->
+    <view 
+      class="custom-nav-left" 
+      style="height: {{menuBtnRect.height}}px; min-width: {{menuBtnRect.width}}px; padding: 0 {{menuBtnPadding}}px; line-height: {{menuBtnRect.height}}px"
+    >
+    
+    </view>
+    <!-- title 字体大小？？ -->
+    <view 
+      class="custom-nav-title"
+      style="line-height: {{menuBtnRect.height}}px; color: {{titleColor}};"
+    >
+      {{title}}
+    </view>
+    <!-- menu btn 占位 -->
+    <!-- 复制一份nav left， 不展示， 保证 title 在中间  -->
+    <view 
+      class="custom-nav-left" 
+      style="height: {{menuBtnRect.height}}px; min-width: {{menuBtnRect.width}}px; padding: 0 {{menuBtnPadding}}px; line-height: {{menuBtnRect.height}}px; visibility: hidden;"
+    >
+    
+    </view>
+  </view>
+</view>
+<!-- nav 占位 -->
+<view class="custom-nav-placeholder" style="height: {{navHeight}}px;"></view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "custom-nav": "./../../components/custom-nav"
+  },
+  "navigationBarTitleText": "首页",
+  "navigationStyle": "custom"
+}
